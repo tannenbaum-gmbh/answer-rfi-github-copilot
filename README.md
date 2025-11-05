@@ -24,9 +24,29 @@ This repository contains a custom GitHub Copilot agent specifically designed to 
 - Sample RFI template with 200+ common questions
 - Example conversations showing agent usage
 - Comprehensive user guide
+- **NEW:** Pre-built prompt files for instant use
+
+✅ **VS Code Integration**:
+- Custom VS Code agent configuration
+- Slash commands for quick access
+- Integrated with GitHub Copilot Chat
 
 ## Quick Start
 
+### Option 1: Use Pre-Built Prompt Files (Fastest!)
+1. Open any file from the [`prompts/`](prompts/) directory
+2. Customize with your specific needs
+3. Use with `@rfi-assistant` in GitHub Copilot Chat
+4. Get instant, comprehensive answers
+
+### Option 2: Use Slash Commands (VS Code)
+```
+@rfi-assistant /data-collection
+@rfi-assistant /security-certs
+@rfi-assistant /gdpr
+```
+
+### Option 3: Ask Directly
 1. **Access the Agent**: Ensure your GitHub organization has GitHub Copilot Enterprise or Business enabled
 2. **Read the Guide**: Check out [AGENT_GUIDE.md](AGENT_GUIDE.md) for detailed usage instructions
 3. **Use the Templates**: Browse [examples/](examples/) for RFI templates and example conversations
@@ -42,7 +62,9 @@ This repository contains a custom GitHub Copilot agent specifically designed to 
 
 ## Documentation
 
+- **[QUICK_START.md](QUICK_START.md)** - Get started in 5 minutes
 - **[AGENT_GUIDE.md](AGENT_GUIDE.md)** - Complete guide to using the agent
+- **[prompts/README.md](prompts/README.md)** - ⭐ **How to use prompt files** (recommended!)
 - **[examples/SAMPLE_RFI_TEMPLATE.md](examples/SAMPLE_RFI_TEMPLATE.md)** - 200+ common RFI questions organized by topic
 - **[examples/EXAMPLE_CONVERSATION.md](examples/EXAMPLE_CONVERSATION.md)** - Example interactions and response patterns
 
