@@ -275,7 +275,7 @@ This template provides common questions found in enterprise RFI questionnaires a
 ### 12.1 Product Development
 **Q: What is the product roadmap?**
 
-**Q: How often are updates releases?**
+**Q: How often are updates released?**
 
 **Q: How are feature requests handled?**
 

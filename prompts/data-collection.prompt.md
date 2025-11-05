@@ -1,6 +1,6 @@
 # Data Collection and Processing
 
-@rfi-assistant 
+@rfi-assistant
 
 ## Question
 What data does GitHub Copilot collect and how is it processed?
