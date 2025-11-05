@@ -4,21 +4,34 @@
 
 A comprehensive custom GitHub Copilot agent system designed to help enterprises answer RFI (Request for Information) questionnaires about GitHub Copilot's security, privacy, and compliance features.
 
+**Version 2.0** now includes **Model Context Protocol (MCP)** integration for real-time documentation access!
+
 ## Key Components
 
-### 1. Custom Agent Configurations
+### 1. Custom Agent with MCP Integration (NEW!)
 
-#### GitHub Copilot Agent (`.github/copilot/agent.yml`)
-- YAML configuration for GitHub's native agent system
-- 7 curated knowledge sources from official documentation
-- Specialized instructions for enterprise RFI responses
-- 8 conversation starters for common questions
+#### Custom Agent Mode (`.github/agents/`)
+- **agent.yml** - Main agent configuration with MCP server integration
+- **rfi-assistant.md** - Agent instructions and persona in markdown
+- **mcp.json** - MCP server connection configuration
+- **README.md** - Complete agent documentation
 
-#### VS Code Agent (`.github/copilot/agents/rfi-assistant.json`)
-- JSON configuration for VS Code integration
-- 8 slash commands for quick access (`/data-collection`, `/security-certs`, etc.)
-- Web search capabilities scoped to official domains
-- File-based resources for local templates
+**MCP Servers Configured:**
+- **Microsoft Learn MCP Server** (`https://learn.microsoft.com/api/mcp`)
+  - Real-time access to Microsoft and GitHub Copilot documentation
+  - Tools: `microsoft_docs_search`, `microsoft_docs_fetch`
+  - No authentication required
+  
+- **GitHub MCP Server** (`@modelcontextprotocol/server-github`)
+  - Access to GitHub repositories and documentation
+  - Authenticated via GitHub token (automatic)
+  - Dynamic documentation retrieval
+
+#### Legacy Configurations (Kept for Compatibility)
+- `.github/copilot/agent.yml` - Original YAML configuration
+- `.github/copilot/agents/rfi-assistant.json` - VS Code integration
+- 8 slash commands for quick access
+- Static knowledge sources
 
 ### 2. Ready-to-Use Prompt Files (9 Files)
 

@@ -8,28 +8,32 @@ This repository contains a custom GitHub Copilot agent specifically designed to 
 
 ## What This Provides
 
-✅ **Custom GitHub Copilot Agent** configured with knowledge sources from:
-- GitHub Copilot Trust Center
-- GitHub Copilot Documentation
-- Microsoft Learn Resources
-- GitHub Policy Documents
+✅ **Custom GitHub Copilot Agent with MCP Integration** - Version 2.0:
+- **NEW:** Model Context Protocol (MCP) integration for real-time documentation access
+- Microsoft Learn MCP Server - Direct access to Microsoft and GitHub documentation
+- GitHub MCP Server - Access to GitHub repos and documentation
+- Dynamic documentation search and fetch capabilities
+- Always up-to-date information from official sources
 
 ✅ **Specialized for Enterprise Context** - Focused on:
 - Data privacy and protection
-- Security and compliance
+- Security and compliance (SOC 2, ISO 27001, GDPR)
 - Enterprise controls and administration
 - Code confidentiality and IP protection
+- Incident response and security monitoring
 
 ✅ **Ready-to-Use Templates**:
 - Sample RFI template with 200+ common questions
 - Example conversations showing agent usage
 - Comprehensive user guide
-- **NEW:** Pre-built prompt files for instant use
+- Pre-built prompt files for instant use
+- Custom agent mode with MCP servers
 
-✅ **VS Code Integration**:
-- Custom VS Code agent configuration
+✅ **Multiple Access Methods**:
+- Custom agent mode in GitHub Copilot Chat
 - Slash commands for quick access
-- Integrated with GitHub Copilot Chat
+- Prompt files for structured queries
+- IDE integration (VS Code, Visual Studio, JetBrains)
 
 ## Quick Start
 
@@ -54,11 +58,13 @@ This repository contains a custom GitHub Copilot agent specifically designed to 
 
 ## Key Features
 
+- 🚀 **MCP-Powered**: Real-time access to Microsoft Learn and GitHub documentation via Model Context Protocol
 - 🔒 **Privacy & Security Focus**: Specialized knowledge of data handling, encryption, and access controls
 - 📋 **Compliance Ready**: Information on SOC 2, ISO 27001, GDPR, CCPA, and other standards
 - 🏢 **Enterprise Controls**: Details on administrative policies, content exclusion, and audit logging
-- 📚 **Cited Responses**: All answers reference official documentation sources
+- 📚 **Cited Responses**: All answers reference official documentation sources with dynamic search
 - 🎯 **RFI Optimized**: Responses structured for formal business documentation
+- 🔄 **Always Current**: MCP integration ensures documentation is always up-to-date
 
 ## Documentation
 
