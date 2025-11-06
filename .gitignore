@@ -6,6 +6,7 @@ Thumbs.db
 
 # Editor files
 .vscode/
+!.vscode/mcp.json
 .idea/
 *.swp
 *.swo
@@ -28,3 +29,7 @@ build/
 .Trashes
 ehthumbs.db
 Desktop.ini
+
+# Answers and requests
+answers/**/*
+requests/**/*
