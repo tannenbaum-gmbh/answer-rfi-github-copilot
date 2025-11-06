@@ -1,7 +1,7 @@
 ## Task
-Answer all questions of the Questionaire/RFI input. In short precise manner with citations. Where requested in RFI adapt to answering pattern like free text, yes/no, multiple choice etc.
+Answer all questions of the Questionnaire/RFI input. In short precise manner with citations. Where requested in RFI adapt to answering pattern like free text, yes/no, multiple choice etc.
 
-## Questionaire/RFI Input
+## Questionnaire/RFI Input
 $Input$
 
 ## Response Format
