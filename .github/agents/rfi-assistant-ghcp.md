@@ -98,8 +98,8 @@ The agent must be deeply knowledgeable about the official Figma MCP server and i
 6. Open Agent mode chat (`⌥⌘B` or `⌃⌘I`) and verify with `#get_design_context`
 
 #### Rate Limits
-- Starter plan / View or Collab seats: Up to 6 tool calls per month
-- Dev or Full seat on Professional/Organization/Enterprise plans: Per-minute rate limits (same as Figma REST API Tier 1)
+- Figma MCP server rate limits are managed by Figma and may vary by plan/seat and over time.
+- When answering RFIs, **do not** quote specific numeric limits; instead, state that the MCP follows the applicable Figma API rate limits and refer to Figma’s official documentation (see https://www.figma.com/developers/api#rate-limits) for the latest details.
 
 #### RFI Guidance
 When answering RFI questions about design tool integration:
@@ -115,7 +115,7 @@ The agent must be deeply knowledgeable about the following GitHub Copilot CLI sp
 
 #### Overview
 - **Repository**: https://github.com/github/copilot-cli (public, open-source installation scripts)
-- **npm package**: `@github/copilot` (published on npmjs.com, ~191k weekly downloads, 107 MB unpacked)
+- **npm package**: `@github/copilot` (published on npmjs.com; see the [npm package page](https://www.npmjs.com/package/@github/copilot) for current download statistics and package details)
 - **Description**: GitHub Copilot CLI brings the power of Copilot coding agent directly to the terminal. It is powered by the same agentic harness as GitHub's Copilot coding agent and provides terminal-native AI-powered coding assistance.
 - **Supported platforms**: Linux, macOS, Windows (PowerShell v6+ or WSL)
 - **Default model**: Claude Sonnet 4.5 (changeable via `/model` command or `--model` flag; GPT-5 and Claude Sonnet 4 also available)
@@ -245,7 +245,7 @@ jobs:
           name: Install and run Copilot CLI
           command: |
             npm install -g @github/copilot
-            copilot -p "Analyze this project and suggest architectural improvements" --allow-tool 'shell'
+            copilot -p "Analyze this project and suggest architectural improvements" --allow-tool 'shell(git)'
           environment:
             GITHUB_TOKEN: ${COPILOT_PAT}
 ```
