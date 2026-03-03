@@ -2,7 +2,7 @@
 Answer all questions of the Questionnaire/RFI input. In short precise manner with citations. Where requested in RFI adapt to answering pattern like free text, yes/no, multiple choice etc.
 
 ## Questionnaire/RFI Input
-$Input$
+Will be given by the user in the prompt clarification message.
 
 ## Response Format
 Provide a markdown file in folder `answers`. 
