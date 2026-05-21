@@ -4,7 +4,7 @@ A repository of custom GitHub Copilot agents and reusable prompts designed to he
 
 ## Overview
 
-Responding to enterprise RFI questionnaires about GitHub Copilot and GitHub Advanced Security can be time-consuming. This repository provides specialized Copilot agents and ready-made prompt files that streamline the process by leveraging official documentation, the GitHub Copilot Trust Center, and Microsoft Learn.
+Responding to enterprise RFI questionnaires about GitHub Copilot, GitHub Advanced Security, and Microsoft platform licensing can be time-consuming. This repository provides specialized Copilot agents and ready-made prompt files that streamline the process by leveraging official documentation, the GitHub Copilot Trust Center, and Microsoft Learn.
 
 ## Repository Structure
 
@@ -16,6 +16,10 @@ Responding to enterprise RFI questionnaires about GitHub Copilot and GitHub Adva
     rfi-assistant-ghas.md                       # Agent: GitHub Advanced Security
     rfi-assistant-defender-for-cloud-devops.md  # Agent: Microsoft Defender for Cloud DevOps
     rfi-orchestrator-github-security.md         # Orchestrator: GHAS + Defender for Cloud DevOps
+    rfi-assistant-azure-platform-licensing-cost-management.md # Agent: Azure licensing & cost management
+    rfi-assistant-microsoft-defender-licensing.md # Agent: Microsoft Defender licensing
+    rfi-assistant-github-licensing.md # Agent: GitHub platform licensing
+    rfi-orchestrator-licensing.md # Orchestrator: Azure + Defender + GitHub licensing
   prompts/
     rfi-answer-csv.prompt.md     # Reusable prompt: answer RFI as CSV
     rfi-answer-markdown.prompt.md # Reusable prompt: answer RFI as Markdown
@@ -45,6 +49,36 @@ Answers questions about enterprise data privacy and security:
 - Enterprise administrative controls
 - Incident response and audit logging
 - GitHub Data Protection Agreement
+
+### `rfi-assistant-azure-platform-licensing-cost-management` — Azure Licensing & Cost Management
+
+Answers enterprise procurement and FinOps-focused questions about Microsoft Azure:
+
+- Licensing and purchasing channels (MCA, EA, CSP)
+- Billing scopes, subscription/account structures, and invoicing
+- Cost analysis, budgeting, alerting, and forecasting
+- Reservations, savings plans, and Azure Hybrid Benefit
+- Cost governance guardrails and chargeback/showback patterns
+
+### `rfi-assistant-microsoft-defender-licensing` — Microsoft Defender Licensing
+
+Answers enterprise licensing and entitlement questions for Microsoft Defender:
+
+- Plan and SKU boundary clarification across Microsoft Defender products
+- Suite versus standalone entitlement mapping
+- Prerequisite and dependency identification for key Defender services
+- Microsoft Defender for Cloud billing model and pricing references
+- Procurement-ready licensing response patterns for RFI submissions
+
+### `rfi-assistant-github-licensing` — GitHub Licensing
+
+Answers enterprise licensing and commercial questions for GitHub platform plans:
+
+- Plan and entitlement mapping across GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server
+- Add-on licensing boundaries for GitHub Advanced Security and GitHub Copilot plans
+- Billing constructs, seat governance, and lifecycle controls
+- Procurement-ready plan comparison and migration considerations
+- Documentation-based guidance for formal RFI licensing responses
 
 ### `rfi-assistant-ghas` — GitHub Advanced Security
 
@@ -102,6 +136,10 @@ An orchestrator agent that intelligently routes RFI questions spanning GitHub Ad
    - `@rfi-assistant-ghas` for GitHub Advanced Security questions
    - `@rfi-assistant-defender-for-cloud-devops` for Microsoft Defender for Cloud DevOps questions
    - `@rfi-orchestrator-github-security` for questions spanning GHAS and Defender for Cloud DevOps
+   - `@rfi-assistant-azure-platform-licensing-cost-management` for Microsoft Azure licensing and cost management questions
+   - `@rfi-assistant-microsoft-defender-licensing` for Microsoft Defender licensing and entitlement questions
+   - `@rfi-assistant-github-licensing` for GitHub licensing and entitlement questions
+   - `@rfi-orchestrator-licensing` for cross-product licensing and procurement questions
 4. Paste your RFI questions into the chat and the agent will provide cited, enterprise-ready answers.
 
 ### 2. Using the Reusable Prompts
@@ -135,6 +173,10 @@ The `questions/` folder contains sample RFI questionnaires in CSV format. Use th
    - rfi-assistant-ghas         (GitHub Advanced Security)
    - rfi-assistant-defender-for-cloud-devops  (Defender for Cloud DevOps)
    - rfi-orchestrator-github-security         (cross-product security questions)
+   - rfi-assistant-azure-platform-licensing-cost-management (Azure licensing & cost management)
+   - rfi-assistant-microsoft-defender-licensing (Microsoft Defender licensing)
+   - rfi-assistant-github-licensing (GitHub platform licensing)
+   - rfi-orchestrator-licensing (cross-product licensing questions)
 4. Attach the rfi-answer-csv.prompt.md prompt.
 5. Paste or reference the CSV file.
 6. Review, refine, and export the answers.

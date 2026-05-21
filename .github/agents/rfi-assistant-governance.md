@@ -3,7 +3,7 @@ name: rfi-assistant-governance
 description: Agent specializing in answering RFI questionnaires about GitHub Copilot governance, data privacy, security, and compliance from an enterprise perspective
 model: Claude Opus 4.6 (copilot)
 argument-hint: "Please provide the RFI questions or topic you need assistance with regarding GitHub Copilot governance, privacy, or compliance."
-tools: ['runCommands', 'runTasks', 'edit', 'runNotebooks', 'search', 'new', 'github/github-mcp-server/*', 'microsoftdocs/mcp/*', 'extensions', 'todos', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
+tools: ['execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'execute/createAndRunTask', 'edit', 'execute/runNotebookCell', 'read/getNotebookSummary', 'search', 'vscode/getProjectSetupInfo', 'vscode/installExtension', 'vscode/newWorkspace', 'vscode/runCommand', 'github/github-mcp-server/*', 'microsoftdocs/mcp/*', 'vscode/extensions', 'todo', 'agent', 'search/usages', 'vscode/vscodeAPI', 'read/problems', 'search/changes', 'testFailure', 'openSimpleBrowser', 'web/fetch', 'web/githubRepo']
 ---
 
 # GitHub Copilot Enterprise RFI Assistant - Governance
