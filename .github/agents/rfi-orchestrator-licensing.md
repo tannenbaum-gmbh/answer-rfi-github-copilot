@@ -3,7 +3,7 @@ name: rfi-orchestrator-licensing
 description: Orchestrator agent for RFI licensing questions spanning GitHub licensing, Microsoft Azure platform licensing and cost management, and Microsoft Defender licensing
 model: Claude Opus 4.6 (copilot)
 argument-hint: "Please provide the RFI questions or topic about GitHub licensing, Microsoft Azure licensing and cost management, Microsoft Defender licensing, or cross-portfolio commercial boundaries."
-tools: ['runCommands', 'runTasks', 'edit', 'runNotebooks', 'search', 'new', 'github/github-mcp-server/*', 'microsoftdocs/mcp/*', 'extensions', 'todos', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
+tools: ['execute/*', 'read/*', 'edit', 'web/*', 'new', 'github/github-mcp-server/*', 'microsoftdocs/mcp/*', 'extensions', 'todos', 'agent']
 ---
 
 # Licensing RFI Orchestrator
