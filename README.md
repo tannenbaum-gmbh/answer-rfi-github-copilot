@@ -4,7 +4,7 @@ A repository of custom GitHub Copilot agents and reusable prompts designed to he
 
 ## Overview
 
-Responding to enterprise RFI questionnaires about GitHub Copilot can be time-consuming. This repository provides two specialized Copilot agents and ready-made prompt files that streamline the process by leveraging official documentation, the GitHub Copilot Trust Center, and Microsoft Learn.
+Responding to enterprise RFI questionnaires about GitHub Copilot can be time-consuming. This repository provides specialized Copilot agents and ready-made prompt files that streamline the process by leveraging official documentation, the GitHub Copilot Trust Center, and Microsoft Learn.
 
 ## Repository Structure
 
@@ -13,6 +13,9 @@ Responding to enterprise RFI questionnaires about GitHub Copilot can be time-con
   agents/
     rfi-assistant-ghcp.md        # Agent: GitHub Copilot features & capabilities
     rfi-assistant-governance.md  # Agent: Governance, privacy, security & compliance
+    rfi-assistant-azure-platform-licensing-cost-management.md # Agent: Azure licensing & cost management
+    rfi-assistant-microsoft-defender-licensing.md # Agent: Microsoft Defender licensing
+    rfi-assistant-github-licensing.md # Agent: GitHub platform licensing
   prompts/
     rfi-answer-csv.prompt.md     # Reusable prompt: answer RFI as CSV
     rfi-answer-markdown.prompt.md # Reusable prompt: answer RFI as Markdown
@@ -43,6 +46,36 @@ Answers questions about enterprise data privacy and security:
 - Incident response and audit logging
 - GitHub Data Protection Agreement
 
+### `rfi-assistant-azure-platform-licensing-cost-management` — Azure Licensing & Cost Management
+
+Answers enterprise procurement and FinOps-focused questions about Microsoft Azure:
+
+- Licensing and purchasing channels (MCA, EA, CSP)
+- Billing scopes, subscription/account structures, and invoicing
+- Cost analysis, budgeting, alerting, and forecasting
+- Reservations, savings plans, and Azure Hybrid Benefit
+- Cost governance guardrails and chargeback/showback patterns
+
+### `rfi-assistant-microsoft-defender-licensing` — Microsoft Defender Licensing
+
+Answers enterprise licensing and entitlement questions for Microsoft Defender:
+
+- Plan and SKU boundary clarification across Microsoft Defender products
+- Suite versus standalone entitlement mapping
+- Prerequisite and dependency identification for key Defender services
+- Microsoft Defender for Cloud billing model and pricing references
+- Procurement-ready licensing response patterns for RFI submissions
+
+### `rfi-assistant-github-licensing` — GitHub Licensing
+
+Answers enterprise licensing and commercial questions for GitHub platform plans:
+
+- Plan and entitlement mapping across GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server
+- Add-on licensing boundaries for GitHub Advanced Security and GitHub Copilot plans
+- Billing constructs, seat governance, and lifecycle controls
+- Procurement-ready plan comparison and migration considerations
+- Documentation-based guidance for formal RFI licensing responses
+
 ## Prerequisites
 
 - **GitHub Copilot Business** or **GitHub Copilot Enterprise** subscription
@@ -58,6 +91,9 @@ Answers questions about enterprise data privacy and security:
 3. Invoke an agent by selecting it from the agent picker or mentioning it:
    - `@rfi-assistant-ghcp` for feature and capability questions
    - `@rfi-assistant-governance` for governance and compliance questions
+  - `@rfi-assistant-azure-platform-licensing-cost-management` for Microsoft Azure licensing and cost management questions
+  - `@rfi-assistant-microsoft-defender-licensing` for Microsoft Defender licensing and entitlement questions
+  - `@rfi-assistant-github-licensing` for GitHub licensing and entitlement questions
 4. Paste your RFI questions into the chat and the agent will provide cited, enterprise-ready answers.
 
 ### 2. Using the Reusable Prompts
